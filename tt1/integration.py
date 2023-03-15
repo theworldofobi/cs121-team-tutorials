@@ -17,7 +17,16 @@ def integrate():
     # You should store the value of the integral in
     # variable total_area
     #
-    total_area = None
+    total_area = 0
+    a = 0
+    b = 1
+    n = 10
+
+    dx = (b - a) / n
+
+    for i in range(0, n):
+        area = f(i * dx) * dx
+        total_area += area
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return total_area
